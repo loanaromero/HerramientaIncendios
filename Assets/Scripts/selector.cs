@@ -21,7 +21,7 @@ public class selector : MonoBehaviour
 
     public void volver()
     {
-        SceneManager.LoadScene("selectorCapacitacion");
+        SceneManager.LoadScene("Menu");
     }
 }
 

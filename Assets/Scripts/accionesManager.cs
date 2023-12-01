@@ -14,6 +14,10 @@ public class accionesManager : MonoBehaviour
     public GameObject panelBotonesAccion1;
     public GameObject panelBotonesAccion2;
 
+    public GameObject volverGeneral;
+    public GameObject volverA1;
+    public GameObject volverA2;
+
     //Paneles extintor
     public GameObject panelPantalla2;
     public GameObject panelPantalla3;
@@ -108,12 +112,16 @@ public class accionesManager : MonoBehaviour
         if (panelElegido == 1)
         {
             panelAccion1.SetActive(false);
+            volverGeneral.SetActive(false);
+            volverA1.SetActive(true);
             panelBotonesAccion1.SetActive(true);
         }
 
         if (panelElegido == 2)
         {
             panelAccion2.SetActive(false);
+            volverGeneral.SetActive(false);
+            volverA2.SetActive(true);
             panelBotonesAccion2.SetActive(true);
         }
     }

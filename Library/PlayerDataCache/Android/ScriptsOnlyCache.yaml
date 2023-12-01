@@ -11,17 +11,12 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -1112,5 +1107,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/triviaCapacitacion.unity
   - Assets/Scenes/Acciones.unity
   - Assets/Scenes/triviaTablero.unity
-  playerPath: C:/Users/Usuario/Desktop/BUILD ANDROID PAEF/PRUEBA 2 RESOLUCION/Herramienta
-    Incendios.apk
+  playerPath: C:/Users/Usuario/Desktop/BUILD ANDROID PAEF/PRUEBA 3/Herramienta Incendios.apk
