@@ -71,8 +71,10 @@ public class accionesManager : MonoBehaviour
     public int panelElegido;
 
     public GameObject panelGameOver;
-    //Tiempo
+
+    //Tiempo A1
     public GameObject Tiempo;
+    public GameObject Reloj;
     public Text TimeTxt;
     public float tiempoInicio = 60;
     public bool comienzo = false;
@@ -147,6 +149,7 @@ public class accionesManager : MonoBehaviour
         btnEsperar.SetActive(false);
         Handheld.Vibrate();
         btnBomberos.SetActive(false);
+        btnEsperarIncorrecto.SetActive(false);
         //Primer pantalla BOMBEROS
         panelPantallaBomb1.SetActive(true);
     }
@@ -249,6 +252,9 @@ public class accionesManager : MonoBehaviour
         panelPantalla6.SetActive(false);
         fondo.SetActive(false);
         panelFin.SetActive(true);
+        comienzo = false;
+        Tiempo.SetActive(false);
+        Reloj.SetActive(false);
         //btnDisparo4.SetActive(false);
     }
 
@@ -270,6 +276,9 @@ public class accionesManager : MonoBehaviour
     {
         panelPantallaBomb2.SetActive(false);
         fondo.SetActive(false);
+        comienzo = false;
+        Tiempo.SetActive(false);
+        Reloj.SetActive(false);
         panelFinBomb.SetActive(true);
     }
 
