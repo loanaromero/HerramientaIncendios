@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class accionesManager : MonoBehaviour
 {
     public GameObject fondo;
+    public GameObject fondoA2;
 
     public GameObject panelAccion1;
     public GameObject panelAccion2;
@@ -73,11 +74,42 @@ public class accionesManager : MonoBehaviour
     public GameObject panelGameOver;
 
     //Tiempo A1
-    public GameObject Tiempo;
-    public GameObject Reloj;
+    public GameObject TiempoObj;
     public Text TimeTxt;
     public float tiempoInicio = 60;
     public bool comienzo = false;
+
+
+    //Paneles Alarma
+    public GameObject panelPantallaAlarma1;
+    public GameObject panelPantallaAlarma2;
+    public GameObject panelPantallaAlarma3;
+    public GameObject panelPantallaAlarma4;
+    public GameObject panelAlarmaFin;
+
+    public GameObject btnAlarma;
+    public GameObject btnBomberosA2;
+    public GameObject btnEsperarA2;
+    public GameObject btnBomberosA2Incorrecto;
+    public GameObject btnEsperarA2Incorrecto;
+
+    //Botones Alarma
+    public GameObject btnEvacuar;
+    public GameObject btnEvacuarIncorrecto;
+    public GameObject btnCerrarPuertas;
+    public GameObject btnCerrarPuertasIncorrecto;
+    public GameObject btnPuntoEncuentro;
+    public GameObject btnPuntoEncuentroIncorrecto;
+    public GameObject btnPuntoEncuentro2;
+    public GameObject btnPuntoEncuentro2Incorrecto;
+
+    //Paneles Extintor
+    public GameObject panelA2Pantalla2;
+    public GameObject panelA2Pantalla3;
+    public GameObject panelA2Pantalla4;
+    public GameObject panelA2Pantalla5;
+    public GameObject panelA2Pantalla6;
+    public GameObject panelA2Fin;
 
     void Start()
     {
@@ -111,6 +143,7 @@ public class accionesManager : MonoBehaviour
     public void Comenzar()
     {
         comienzo = true;
+        TiempoObj.SetActive(true);
         if (panelElegido == 1)
         {
             panelAccion1.SetActive(false);
@@ -137,9 +170,6 @@ public class accionesManager : MonoBehaviour
         btnBomberosIncorrecto.SetActive(false);
         btnEsperarIncorrecto.SetActive(false);
         panelPantalla2.SetActive(true);
-        btnExtintor.SetActive(false);
-        btnEsperarIncorrecto.SetActive(false);
-        btnBomberosIncorrecto.SetActive(false);
     }
 
     public void LlamarBomberos()
@@ -253,8 +283,7 @@ public class accionesManager : MonoBehaviour
         fondo.SetActive(false);
         panelFin.SetActive(true);
         comienzo = false;
-        Tiempo.SetActive(false);
-        Reloj.SetActive(false);
+        TiempoObj.SetActive(false);
         //btnDisparo4.SetActive(false);
     }
 
@@ -277,18 +306,115 @@ public class accionesManager : MonoBehaviour
         panelPantallaBomb2.SetActive(false);
         fondo.SetActive(false);
         comienzo = false;
-        Tiempo.SetActive(false);
-        Reloj.SetActive(false);
+        TiempoObj.SetActive(false);
         panelFinBomb.SetActive(true);
+    }
+
+    //PANTALLAS A2
+    public void ActivarAlarma()
+    {
+        btnAlarma.SetActive(false);
+        btnBomberosA2.SetActive(false);
+        btnEsperarA2.SetActive(false);
+        btnBomberosA2Incorrecto.SetActive(false);
+        btnEsperarA2Incorrecto.SetActive(false);
+        panelPantallaAlarma1.SetActive(true);
+    }
+
+    public void LlamarBomberosA2()
+    {
+        Handheld.Vibrate();
+        btnBomberos.SetActive(false);
+        btnBomberosA2Incorrecto.SetActive(true);
+    }
+    public void EsperarA2()
+    {
+        Handheld.Vibrate();
+        btnEsperarA2.SetActive(false);
+        btnEsperarA2Incorrecto.SetActive(true);
+        Debug.Log("emtro y cambio");
+    }
+
+    //P1 Alarma
+    public void Evacuar()
+    {
+        Handheld.Vibrate();
+        btnEvacuar.SetActive(false);
+        btnEvacuarIncorrecto.SetActive(true);
+    }
+
+    public void LlamarBomberosA2_1()
+    {
+        panelPantallaAlarma1.SetActive(false);
+        panelPantallaAlarma2.SetActive(true);
+        btnEvacuarIncorrecto.SetActive(false);
+        btnCerrarPuertasIncorrecto.SetActive(false);
+    }
+
+    public void CerrarPuertas()
+    {
+        Handheld.Vibrate();
+        btnCerrarPuertas.SetActive(false);
+        btnCerrarPuertasIncorrecto.SetActive(true);
+    }
+
+    //P2 Alarma
+    public void UsarExtintorA2()
+    {
+        panelPantallaAlarma2.SetActive(false);
+        //Panel extintor
+        /*.SetActive(true);*/
+        btnEvacuarIncorrecto.SetActive(false);
+        btnCerrarPuertasIncorrecto.SetActive(false);
+    }
+
+    public void PuntoEncuentro()
+    {
+        Handheld.Vibrate();
+        btnPuntoEncuentro.SetActive(false);
+        btnPuntoEncuentroIncorrecto.SetActive(true);
+    }
+
+    public void Evacuar2()
+    {
+        panelPantallaAlarma2.SetActive(false);
+        panelPantallaAlarma3.SetActive(true);
+        btnPuntoEncuentroIncorrecto.SetActive(false);
+    }
+
+    //P3 Alarma
+    public void PuntoEncuentro2()
+    {
+        Handheld.Vibrate();
+        btnPuntoEncuentro2.SetActive(false);
+        btnPuntoEncuentro2Incorrecto.SetActive(true);
+    }
+    public void CerrarPuertas2()
+    {
+        panelPantallaAlarma3.SetActive(false);
+        panelPantallaAlarma4.SetActive(true);
+        btnPuntoEncuentro2Incorrecto.SetActive(false);
+    }
+    //P4 Alarma
+    public void PuntoEncuentro3()
+    {
+        panelPantallaAlarma4.SetActive(false);
+        fondoA2.SetActive(false);
+        panelAlarmaFin.SetActive(true);
+        comienzo = false;
+        TiempoObj.SetActive(false);
     }
 
     public void GameOver()
     {
+        volverGeneral.SetActive(true);
         panelAccion1.SetActive(false);
         panelAccion2.SetActive(false);
         panelBotonesAccion1.SetActive(false);
         panelBotonesAccion2.SetActive(false);
         panelGameOver.SetActive(true);
+        TiempoObj.SetActive(false);
+        comienzo = false;
     }
 
     public void Reintentar()
