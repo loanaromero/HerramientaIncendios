@@ -621,7 +621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1c6038fb061d00140a1670b1c6e78f99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84ba59b723409d343b6d3966811627d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -855,7 +855,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: Acercarse2
+        m_MethodName: AcercarseA2_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1062,7 +1062,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: Acercarse
+        m_MethodName: AcercarseA2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1485,7 +1485,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: LiberarGatillo
+        m_MethodName: LiberarGatilloA2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad5ad1442715f4540b578f15f523f90d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1458ab4575562a4288211f3a442489c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4321,7 +4321,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: ApretarPalanca2
+        m_MethodName: ApretarPalancaA2_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5236,7 +5236,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: ApretarPalanca
+        m_MethodName: ApretarPalancaA2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2fea281dde0d4ae4892c7d7f3d095d76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38e86110d11e27140b7e3cc13cfa4894, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6111,7 +6111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1c6038fb061d00140a1670b1c6e78f99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84ba59b723409d343b6d3966811627d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6213,7 +6213,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: LiberarGatillo2
+        m_MethodName: LiberarGatilloA2_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6478,7 +6478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: DisparoFuego3
+        m_MethodName: DisparoFuegoA2_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7611,7 +7611,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: DisparoFuego
+        m_MethodName: DisparoFuegoA2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7893,7 +7893,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: DisparoFuego2
+        m_MethodName: DisparoFuegoA2_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8266,7 +8266,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: ApretarPalanca3
+        m_MethodName: ApretarPalancaA2_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8554,7 +8554,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: DisparoFuego4
+        m_MethodName: DisparoFuegoA2_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9166,6 +9166,25 @@ MonoBehaviour:
   panelA2Pantalla5: {fileID: 1476232733}
   panelA2Pantalla6: {fileID: 1278123875}
   panelA2Fin: {fileID: 746922032}
+  btnDistanciaA2: {fileID: 2135384944}
+  btnPalancaA2: {fileID: 712244448}
+  btnGatilloA2: {fileID: 218883143}
+  btnPalancaA2Incorrecto: {fileID: 1475885525}
+  btnGatilloA2Incorrecto: {fileID: 801015450}
+  btnPalancaA2_2: {fileID: 548414431}
+  btnGatilloA2_2: {fileID: 802987578}
+  btnDisparoA2: {fileID: 1084446928}
+  btnPalancaA2_2Incorrecto: {fileID: 1837383322}
+  btnDisparoA2Incorrecto: {fileID: 568515165}
+  btnAcercarseA2: {fileID: 122959995}
+  btnPalancaA2_3: {fileID: 1251684474}
+  btnDisparoA2_2: {fileID: 1150039272}
+  btnAcercarseA2Incorrecto: {fileID: 1331188033}
+  btnDisparoA2_2Incorrecto: {fileID: 417384576}
+  btnAcercarseA2_2: {fileID: 98272000}
+  btnDisparoA2_3: {fileID: 921623425}
+  btnDisparoA2_4: {fileID: 1319615385}
+  btnDisparoA2_3Incorrecto: {fileID: 974009504}
 --- !u!1 &1448447171
 GameObject:
   m_ObjectHideFlags: 0
@@ -13271,7 +13290,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1386269684}
         m_TargetAssemblyTypeName: accionesManager, Assembly-CSharp
-        m_MethodName: TomarDistancia
+        m_MethodName: TomarDistanciaA2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

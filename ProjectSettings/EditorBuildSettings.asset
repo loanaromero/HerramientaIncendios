@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/triviaTablero.unity
+    guid: 9be88c6598053bb4ab86b0d8e30cff1e
+  - enabled: 1
     path: Assets/Scenes/selectorCapacitacion.unity
     guid: c88dce4d45490ba498bb3472ff5e7d54
   - enabled: 1
@@ -16,11 +19,8 @@ EditorBuildSettings:
     guid: 4bc0f985a983985458d40d22c01f1889
   - enabled: 1
     path: Assets/Scenes/triviaCapacitacion.unity
-    guid: 9be88c6598053bb4ab86b0d8e30cff1e
+    guid: 5d4aebb3d9065c341898910d09de421e
   - enabled: 1
     path: Assets/Scenes/Acciones.unity
     guid: 9c10b3a1152b86e438a33dc4c021bc33
-  - enabled: 1
-    path: Assets/Scenes/triviaTablero.unity
-    guid: 62d4598c7402dcc4eac2809b2bd9410e
   m_configObjects: {}

@@ -27,7 +27,6 @@ public class AnswerScript : MonoBehaviour
             Debug.Log("Wrong Answer");
             quizManager.wrong();
             StartCoroutine(CambiarColorRojoBtn());
-
             audioSourceRespuestas.PlayOneShot(clipFallo);
             Handheld.Vibrate();
         }

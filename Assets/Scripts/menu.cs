@@ -21,6 +21,10 @@ public class menu : MonoBehaviour
     public void pasar()
     {
         SceneManager.LoadScene("selectorCapacitacion");
-       
+    }
+
+    public void volverMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

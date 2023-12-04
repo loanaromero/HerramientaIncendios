@@ -111,6 +111,31 @@ public class accionesManager : MonoBehaviour
     public GameObject panelA2Pantalla6;
     public GameObject panelA2Fin;
 
+    //Botones extintor A2
+    public GameObject btnDistanciaA2;
+    public GameObject btnPalancaA2;
+    public GameObject btnGatilloA2;
+    public GameObject btnPalancaA2Incorrecto;
+    public GameObject btnGatilloA2Incorrecto;
+
+    public GameObject btnPalancaA2_2;
+    public GameObject btnGatilloA2_2;
+    public GameObject btnDisparoA2;
+    public GameObject btnPalancaA2_2Incorrecto;
+    public GameObject btnDisparoA2Incorrecto;
+
+
+    public GameObject btnAcercarseA2;
+    public GameObject btnPalancaA2_3;
+    public GameObject btnDisparoA2_2;
+    public GameObject btnAcercarseA2Incorrecto;
+    public GameObject btnDisparoA2_2Incorrecto;
+
+    public GameObject btnAcercarseA2_2;
+    public GameObject btnDisparoA2_3;
+    public GameObject btnDisparoA2_4;
+    public GameObject btnDisparoA2_3Incorrecto;
+
     void Start()
     {
         panelElegido = Random.Range(1, 3);
@@ -362,8 +387,7 @@ public class accionesManager : MonoBehaviour
     public void UsarExtintorA2()
     {
         panelPantallaAlarma2.SetActive(false);
-        //Panel extintor
-        /*.SetActive(true);*/
+        panelA2Pantalla2.SetActive(true);
         btnEvacuarIncorrecto.SetActive(false);
         btnCerrarPuertasIncorrecto.SetActive(false);
     }
@@ -380,6 +404,104 @@ public class accionesManager : MonoBehaviour
         panelPantallaAlarma2.SetActive(false);
         panelPantallaAlarma3.SetActive(true);
         btnPuntoEncuentroIncorrecto.SetActive(false);
+    }
+
+    //P1 Extintor
+    //Segunda pantalla EXTINTOR
+    public void TomarDistanciaA2()
+    {
+        panelA2Pantalla2.SetActive(false);
+        panelA2Pantalla3.SetActive(true);
+        //btnDistancia.SetActive(false);
+        btnPalancaA2Incorrecto.SetActive(false);
+        btnGatilloA2Incorrecto.SetActive(false);
+    }
+
+    public void ApretarPalancaA2()
+    {
+        Handheld.Vibrate();
+        btnPalancaA2.SetActive(false);
+        btnPalancaA2Incorrecto.SetActive(true);
+    }
+    public void LiberarGatilloA2()
+    {
+        Handheld.Vibrate();
+        btnGatilloA2.SetActive(false);
+        btnGatilloA2Incorrecto.SetActive(true);
+    }
+
+    //Tercera pantalla EXTINTOR
+    public void ApretarPalancaA2_1()
+    {
+        Handheld.Vibrate();
+        btnPalancaA2_2.SetActive(false);
+        btnPalancaA2_2Incorrecto.SetActive(true);
+    }
+
+    public void LiberarGatilloA2_1()
+    {
+        panelA2Pantalla3.SetActive(false);
+        panelA2Pantalla4.SetActive(true);
+        //btnGatillo2.SetActive(false);
+        btnPalancaA2_2Incorrecto.SetActive(false);
+        btnDisparoA2Incorrecto.SetActive(false);
+    }
+
+    public void DisparoFuegoA2()
+    {
+        Handheld.Vibrate();
+        btnDisparoA2.SetActive(false);
+        btnDisparoA2Incorrecto.SetActive(true);
+    }
+
+    //Cuarta pantalla EXTINTOR
+    public void AcercarseA2()
+    {
+        Handheld.Vibrate();
+        btnAcercarseA2.SetActive(false);
+        btnAcercarseA2Incorrecto.SetActive(true);
+    }
+
+    public void ApretarPalancaA2_2()
+    {
+        panelA2Pantalla4.SetActive(false);
+        panelA2Pantalla5.SetActive(true);
+        //btnPalanca3.SetActive(false);
+        btnAcercarseA2Incorrecto.SetActive(false);
+        btnDisparoA2_2Incorrecto.SetActive(false);
+    }
+
+    public void DisparoFuegoA2_1()
+    {
+        Handheld.Vibrate();
+        btnDisparoA2_2.SetActive(false);
+        btnDisparoA2_2Incorrecto.SetActive(true);
+    }
+
+    //Quinta pantalla EXTINTOR
+    public void AcercarseA2_1()
+    {
+        panelA2Pantalla5.SetActive(false);
+        panelA2Pantalla6.SetActive(true);
+        //btnAcercarse2.SetActive(false);
+        btnDisparoA2_3Incorrecto.SetActive(false);
+    }
+    public void DisparoFuegoA2_2()
+    {
+        Handheld.Vibrate();
+        btnDisparoA2_3.SetActive(false);
+        btnDisparoA2_3Incorrecto.SetActive(true);
+    }
+
+    //Sexta pantalla EXTINTOR
+    public void DisparoFuegoA2_3()
+    {
+        panelA2Pantalla6.SetActive(false);
+        fondoA2.SetActive(false);
+        panelA2Fin.SetActive(true);
+        comienzo = false;
+        TiempoObj.SetActive(false);
+        //btnDisparo4.SetActive(false);
     }
 
     //P3 Alarma
