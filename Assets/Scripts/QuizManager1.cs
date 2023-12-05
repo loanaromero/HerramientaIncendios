@@ -10,6 +10,7 @@ public class QuizManager1 : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
+    public GameObject PanelInstrucciones;
     public GameObject Panel;
     public GameObject Puntaje;
     public GameObject boton;
@@ -26,6 +27,12 @@ public class QuizManager1 : MonoBehaviour
     public int proxima;
     public float tiempoInicio = 60;
 
+    public bool empieza = false;
+
+    public GameObject btnJugador;
+    public Text InfoTxtEdit; //informacion sobre cuantos casilleros avanza
+    public GameObject InfoText;
+    public GameObject volverGeneral;
 
     public void Start()
     {
@@ -38,8 +45,11 @@ public class QuizManager1 : MonoBehaviour
 
     public void Update()
     {
-        tiempoInicio -= Time.deltaTime;
-        TimeTxt.text = Mathf.Round(tiempoInicio).ToString();
+        if (empieza)
+        {
+            tiempoInicio -= Time.deltaTime;
+            TimeTxt.text = Mathf.Round(tiempoInicio).ToString();
+        }
 
         if(tiempoInicio < 1)
         {
@@ -49,6 +59,8 @@ public class QuizManager1 : MonoBehaviour
     
     public void GameOver()
     {
+        volverGeneral.SetActive(true);
+        empieza = false;
         Panel.SetActive(false);
         Puntaje.SetActive(true);
         ScoreTxt.text = score + "/" + totalQuestions;
@@ -73,6 +85,8 @@ public class QuizManager1 : MonoBehaviour
 
     public void correct()
     {
+        InfoText.SetActive(true);
+        btnJugador.SetActive(true);
         Tiempo.SetActive(false);
         Reloj.SetActive(false);
         //contestas bn ;)
@@ -85,6 +99,8 @@ public class QuizManager1 : MonoBehaviour
 
     public void wrong()
     {
+        InfoText.SetActive(true);
+        btnJugador.SetActive(true);
         Tiempo.SetActive(false);
         Reloj.SetActive(false);
         //le pifias :(
@@ -136,6 +152,8 @@ public class QuizManager1 : MonoBehaviour
     {
         Tiempo.SetActive(true);
         Reloj.SetActive(true);
+        btnJugador.SetActive(false);
+        InfoText.SetActive(false);
         tiempoInicio = 60;
         boton.SetActive(true);
     }
@@ -143,5 +161,13 @@ public class QuizManager1 : MonoBehaviour
     void desactivarBotones()
     {
         boton.SetActive(false);
+    }
+
+    public void Comenzar()
+    {
+        PanelInstrucciones.SetActive(false);
+        Panel.SetActive(true);
+        volverGeneral.SetActive(false);
+        empieza = true;
     }
 }

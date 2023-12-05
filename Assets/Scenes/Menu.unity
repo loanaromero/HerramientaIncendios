@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130288691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: 644, z: 0}
+  m_LocalPosition: {x: 50, y: 666, z: 0}
   m_LocalScale: {x: 54.0686, y: 54.0686, z: 54.0686}
   m_Children: []
   m_Father: {fileID: 575072164}
@@ -850,7 +850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1592780278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1536678047}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: abrirTablero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1592780278
 MonoBehaviour:
   m_ObjectHideFlags: 0

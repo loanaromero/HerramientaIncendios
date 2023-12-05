@@ -27,4 +27,9 @@ public class menu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void abrirTablero()
+    {
+        SceneManager.LoadScene("triviaTablero");
+    }
 }

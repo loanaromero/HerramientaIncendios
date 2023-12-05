@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AnswerScript
+    - AnswerScript1
     - QuizManager
+    - QuizManager1
     - accionesManager
     - menu
     - obtenerPDF
@@ -11,12 +13,17 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -125,15 +132,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 4106}
+      Script: {instanceID: 4108}
     - Class: 114
-      Script: {instanceID: 4960}
+      Script: {instanceID: 4962}
     - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 5558}
+      Script: {instanceID: 5560}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,7 +189,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 5202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -221,9 +228,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2800}
     - Class: 114
+      Script: {instanceID: 2984}
+    - Class: 114
       Script: {instanceID: 3244}
     - Class: 114
+      Script: {instanceID: 3508}
+    - Class: 114
       Script: {instanceID: 3644}
+    - Class: 114
+      Script: {instanceID: 3982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -282,7 +295,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 3982}
+    - Class: 114
+      Script: {instanceID: 4512}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -316,17 +331,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1506}
     - Class: 114
+      Script: {instanceID: 2354}
+    - Class: 114
       Script: {instanceID: 2800}
+    - Class: 114
+      Script: {instanceID: 2984}
     - Class: 114
       Script: {instanceID: 3244}
     - Class: 114
+      Script: {instanceID: 3508}
+    - Class: 114
       Script: {instanceID: 3644}
+    - Class: 114
+      Script: {instanceID: 3790}
+    - Class: 114
+      Script: {instanceID: 3982}
+    - Class: 114
+      Script: {instanceID: 5862}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -495,7 +528,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: f8d49cca0a062828978b8ce7ab70ccd2
+      Hash: 36fc5180281278761b697413d504276a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: accionesManager
@@ -691,6 +724,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: b691427b1c4eb4529192f90d33161083
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnswerScript1
   - hash:
       serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
@@ -1047,6 +1086,12 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
+      Hash: 18f01110d7b07c33a48690d5beac326c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuizManager1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -1102,9 +1147,10 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
+  - Assets/Scenes/triviaTablero.unity
   - Assets/Scenes/selectorCapacitacion.unity
   - Assets/Scenes/simuladorExtintor.unity
   - Assets/Scenes/triviaCapacitacion.unity
   - Assets/Scenes/Acciones.unity
-  - Assets/Scenes/triviaTablero.unity
-  playerPath: C:/Users/Usuario/Desktop/BUILD ANDROID PAEF/PRUEBA 3/Herramienta Incendios.apk
+  playerPath: C:/Users/Usuario/Desktop/BUILD ANDROID PAEF/AHORA SI FINAL/Herramienta
+    Incendios.apk

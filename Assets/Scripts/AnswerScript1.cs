@@ -37,6 +37,7 @@ public class AnswerScript1 : MonoBehaviour
             quizManager1.correct();
             GetComponent<Image>().color = Color.green;
             audioSourceRespuestas.PlayOneShot(clipAcierto);
+            quizManager1.InfoTxtEdit.text = "¡GENIAL! AVANZAS 3 CASILLEROS";
         }
         else
         {
@@ -45,6 +46,7 @@ public class AnswerScript1 : MonoBehaviour
             GetComponent<Image>().color = Color.red;
             audioSourceRespuestas.PlayOneShot(clipFallo);
             Handheld.Vibrate();
+            quizManager1.InfoTxtEdit.text = "¡QUÉ PENA! AVANZAS 1 CASILLERO";
         }
     }
 }
